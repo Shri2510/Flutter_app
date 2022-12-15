@@ -9,7 +9,7 @@ class Homepage extends StatelessWidget {
         title: Text("Catalog App"),
       ),
       body: Center(
-        child: Text("Welcome to $days of Flutter!"),
+        child: Text("Welcome to $days days of Flutter!"),
       ),
       drawer: Drawer(),
     );
