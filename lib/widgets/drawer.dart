@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // final image_url = 'https://wallpapercave.com/wp/wp9557400.png';
+    final image_url = 'https://wallpapercave.com/wp/wp9557400.png';
     return Drawer(
         child: Container(
       color: Colors.deepPurple,
@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
               accountEmail: const Text("raidenshogan@gmail.com"),
               currentAccountPicture: CircleAvatar(
                   // backgroundColor: Colors.transparent,
-                  backgroundImage: AssetImage("assets/images/Raiden.webp")),
+                  backgroundImage: NetworkImage(image_url)),
             )),
         const ListTile(
             leading: Icon(CupertinoIcons.home, color: Colors.white),
